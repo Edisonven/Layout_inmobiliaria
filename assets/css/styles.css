@@ -13,11 +13,6 @@ body {
 /*APARTADO BARRA DE NAVEGACIÓN*/
 .navbar {
   grid-area: navbar;
-  background-image: url(../images/anthony-rosa--mAwUcH66hY-unsplash.jpg);
-  height: 500px;
-  width: 100%;
-  background-position: center;
-  object-fit: cover;
 }
 .navbar__container {
   display: grid;
@@ -30,6 +25,11 @@ body {
   --close: scale(0);
   width: 100%;
   position: relative;
+}
+.nabvar__img {
+  position: absolute;
+  width: 100%;
+  height: 450px;
 }
 .navbar__title {
   color: #fff;
