@@ -1,4 +1,81 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-areas: "navbar";
+}
+
+/*APARTADO BARRA DE NAVEGACIÓN*/
+.navbar {
+  grid-area: navbar;
+  background-image: url(../images/anthony-rosa--mAwUcH66hY-unsplash.jpg);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+.navbar__container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+  align-items: center;
+  grid-template-areas: "logo icons";
+  padding: 15px;
+  --open: scale(1);
+  --close: scale(0);
+  width: 100%;
+  position: relative;
+}
+.navbar__title {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.navbar__icons {
+  grid-area: icons;
+}
+.navbar__icon--open {
+  transform: var(--open);
+  transition: transform linear 0.3s;
+}
+.navbar__icon--close {
+  transform: var(--close);
+  transition: transform linear 0.3s;
+}
+.navbar__container:has(:target) {
+  --open: scale(0);
+  --close: scale(1);
+}
+.navbar__links {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #000000cc;
+  height: 40vh;
+  width: 50%;
+  top: 100%;
+  transition: all ease-in-out 0.3s;
+  left: -100%;
+  border-radius: 0 0 20px 0;
+}
+.navbar__links:target {
+  left: 0%;
+}
+.nabvar__link {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: max-content;
 }
