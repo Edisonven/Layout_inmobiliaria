@@ -9,7 +9,9 @@ body {
   display: grid;
   grid-template-areas:
     "navbar"
-    "section";
+    "section1"
+    "section2"
+    "footer";
 }
 
 /*APARTADO BARRA DE NAVEGACIÓN*/
@@ -88,8 +90,11 @@ body {
 /*APARTADO SECTION GALERÍA*/
 
 .section__forsale {
-  grid-area: section;
+  grid-area: section1;
   margin-top: 500px;
+}
+.section__forrent {
+  grid-area: section2;
 }
 .section__title {
   text-align: center;
@@ -172,6 +177,29 @@ body {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+/*APARTADO FOOTER*/
+.footer {
+  grid-area: footer;
+}
+.footer__container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+.footer__first__section {
+  margin: 40px 0;
+}
+.footer__logo {
+  text-align: center;
+  padding: 20px 0;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  justify-content: center;
+}
 
 /*APARTADO VERSIÓN ESCRITORIO*/
 @media (min-width: 576px) {
@@ -227,5 +255,10 @@ body {
   }
   .card__body__container {
     height: 750px;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
   }
 }
