@@ -83,9 +83,10 @@ body {
   font-size: 1.5rem;
   width: max-content;
 }
+
 /*APARTADO SECTION GALERÍA*/
 
-.section {
+.section__forsale {
   grid-area: section;
   margin-top: 500px;
 }
@@ -93,6 +94,9 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 1.8rem;
+}
+.section__title--for-rent {
+  margin-top: 40px;
 }
 .card__body__container {
   width: 90%;
