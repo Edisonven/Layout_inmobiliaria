@@ -187,11 +187,11 @@ body {
   padding: 20px;
 }
 .footer__first__section {
-  margin: 40px 0;
+  margin: 40px 10px;
 }
 .footer__logo {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 .footer__social {
   display: flex;
@@ -199,6 +199,7 @@ body {
   gap: 20px;
   margin-top: 40px;
   justify-content: center;
+  padding: 20px 10px;
 }
 
 /*APARTADO VERSIÓN ESCRITORIO*/
