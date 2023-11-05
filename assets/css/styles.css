@@ -26,7 +26,8 @@ body {
   --open: scale(1);
   --close: scale(0);
   width: 100%;
-  position: relative;
+  position: fixed;
+  width: 100%;
 }
 .nabvar__img {
   position: absolute;
@@ -85,20 +86,24 @@ body {
 
 .section {
   grid-area: section;
-  margin-top: 400px;
+  margin-top: 500px;
 }
 .section__title {
   text-align: center;
   font-weight: 700;
   font-size: 1.8rem;
 }
-.card__body{
+.card__body__container{
   width: 90%;
-  margin: 0 auto;
+  margin: 40px auto;
   border-radius: 10px;
   border: 1px solid gray;
   overflow: hidden;
-  max-width: 500px;
+  max-width: 450px;
+  min-width: 300px;
+}
+.card__body{
+  padding: 10px;
 }
 .card__img{
   width: 100%;
@@ -129,4 +134,23 @@ body {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 20px;
+}
+.card__inportant__info__container{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.card__inportant__info{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card__inportant__info__text{
+  color: #ff0000;
+}
+.card__inportant__info__text--smooking,
+.card__inportant__info__text--pets{
+  color: #008000;
 }
