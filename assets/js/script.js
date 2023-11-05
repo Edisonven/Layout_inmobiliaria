@@ -45,25 +45,29 @@ for (const propiedad of propiedadesVenta) {
         </div>
         <p class="card__price">${propiedad.costo}</p>
         <div class="card__inportant__info__container">
-            <div class="card__inportant__info" id="info1">
-                
-            </div>
-            <div class="card__inportant__info" id="info2">
-                
-            </div>
+            <div class="card__inportant__info" id="info1"> </div>
+            <div class="card__inportant__info" id="info2"> </div>
         </div>
-     </div>
+    </div>
   </div>
   `;
   cardsContainer.innerHTML = template;
-  if (propiedad.smoke || propiedad.pets) {
+  if (propiedad.smoke === true) {
     let smoke = document.getElementById("info1");
-    smoke.innerHTML = `<img src="./assets/images/cigarette.svg" alt="" class="card__icon card__icon--no-smooking"><span
-      class="card__inportant__info__text card__inportant__info__text--no-smooking">No se permite fumar</span>`;
+    smoke.innerHTML = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt=""class="card__icon card__icon--smooking">
+                       <span class="card__inportant__info__text card__inportant__info__text--smooking">Se permite fumar</span>`;
+  } else {
+    let smoke = document.getElementById("info1");
+    smoke.innerHTML = `<img src="./assets/images/cigarette.svg" alt=""class="card__icon card__icon--no-smooking">
+                       <span class="card__inportant__info__text card__inportant__info__text--no-smooking">No se permite fumar</span>`;
   }
-  if (propiedad.smoke || propiedad.pets) {
+  if (propiedad.pets === true) {
     let smoke = document.getElementById("info2");
-    smoke.innerHTML = `<img src="./assets/images/pets.svg" alt="" class="card__icon">
-    <span class="card__inportant__info__text card__inportant__info__text--pets">Se permiten mascotas</span>`;
+    smoke.innerHTML = ` <img src="./assets/images/pets.svg" alt="" class="card__icon">
+                        <span class="card__inportant__info__text card__inportant__info__text--pets">Se permiten mascotas</span>`;
+  } else {
+    let smoke = document.getElementById("info2");
+    smoke.innerHTML = `<img src="./assets/images/block.svg" alt="" class="card__icon">
+                       <span class="card__inportant__info__text card__inportant__info__text--no-pets">No se permiten mascotas</span>`;
   }
 }
