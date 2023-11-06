@@ -111,7 +111,7 @@ body {
   border: 1px solid gray;
   overflow: hidden;
   max-width: 450px;
-  min-width: 300px;
+  min-width: 350px;
 }
 .card__body {
   padding: 10px 10px 30px;

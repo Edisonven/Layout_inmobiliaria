@@ -11,6 +11,42 @@ const propiedadesVenta = [
     smoke: false,
     pets: true,
   },
+  {
+    nombre: "Apartamento de 2 pisos",
+    src: "https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?auto=format&fit=crop&q=80&w=2028&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    descripcion:
+      "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
+    ubicacion: "Britsh Columbia, CA, 250",
+    habitaciones: 2 + " habitaciones",
+    baños: 2 + " Baños",
+    costo: "Precio $" + 6000,
+    smoke: false,
+    pets: false,
+  },
+  {
+    nombre: "Casas en avenida",
+    src: "https://images.unsplash.com/photo-1610569244414-5e7453a447a8?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    descripcion:
+      "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
+    ubicacion: "Britsh Columbia, CA, 250",
+    habitaciones: 3 + " habitaciones",
+    baños: 2 + " Baños",
+    costo: "Precio $" + 4000,
+    smoke: false,
+    pets: false,
+  },
+  {
+    nombre: "Apartamento de 2 pisos",
+    src: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=1984&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    descripcion:
+      "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
+    ubicacion: "Britsh Columbia, CA, 250",
+    habitaciones: 3 + " habitaciones",
+    baños: 2 + " Baños",
+    costo: "Precio $" + 4000,
+    smoke: false,
+    pets: false,
+  }
 ];
 
 const propiedadesAlquiler = [
@@ -27,7 +63,7 @@ const propiedadesAlquiler = [
 ];
 let cardsContainer = document.getElementById("section1");
 for (const propiedad of propiedadesVenta) {
-  const template = `
+  let template = `
   <div class="card__body__container">
     <img src="${propiedad.src}" alt="" class="card__img">
     <div class="card__body">
@@ -51,7 +87,7 @@ for (const propiedad of propiedadesVenta) {
     </div>
   </div>
   `;
-  cardsContainer.innerHTML = template;
+  cardsContainer.innerHTML += template;
   if (propiedad.smoke === true) {
     let smoke = document.getElementById("info1");
     smoke.innerHTML = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt=""class="card__icon card__icon--smooking">
