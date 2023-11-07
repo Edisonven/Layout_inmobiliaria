@@ -5,9 +5,9 @@ const propiedadesVenta = [
     descripcion:
       "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
     ubicacion: "Britsh Columbia, CA, 250",
-    habitaciones: 3 + " habitaciones",
-    baños: 2 + " Baños",
-    costo: "Precio $" + 4000,
+    habitaciones: 3,
+    baños: 2,
+    costo: 4000,
     smoke: false,
     pets: true,
   },
@@ -17,9 +17,9 @@ const propiedadesVenta = [
     descripcion:
       "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
     ubicacion: "Britsh Columbia, CA, 250",
-    habitaciones: 2 + " habitaciones",
-    baños: 2 + " Baños",
-    costo: "Precio $" + 6000,
+    habitaciones: 2,
+    baños: 2,
+    costo: 6000,
     smoke: true,
     pets: false,
   },
@@ -29,9 +29,9 @@ const propiedadesVenta = [
     descripcion:
       "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
     ubicacion: "Britsh Columbia, CA, 250",
-    habitaciones: 3 + " habitaciones",
-    baños: 2 + " Baños",
-    costo: "Precio $" + 4000,
+    habitaciones: 3,
+    baños: 2,
+    costo: 4000,
     smoke: false,
     pets: false,
   },
@@ -41,9 +41,9 @@ const propiedadesVenta = [
     descripcion:
       "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
     ubicacion: "Britsh Columbia, CA, 250",
-    habitaciones: 4 + " habitaciones",
-    baños: 4 + " Baños",
-    costo: "Precio $" + 3000,
+    habitaciones: 4,
+    baños: 4,
+    costo: 3000,
     smoke: true,
     pets: true,
   },
@@ -75,11 +75,11 @@ for (const propiedad of propiedadesVenta) {
         </div>
         <div class="card__info">
             <img src="./assets/images/bed.svg" alt="" class="card__icon card__icon--bed">
-            <span class="card__info__text">${propiedad.habitaciones}</span>
+            <span class="card__info__text">${propiedad.habitaciones} Habitaciones</span>
             <img src="./assets/images/bath.svg" alt="" class="card__icon card__icon--bath">
-            <span class="card__info__text">${propiedad.baños}</span>
+            <span class="card__info__text">${propiedad.baños} Baños</span>
         </div>
-        <p class="card__price">${propiedad.costo}</p>
+        <p class="card__price">Precio: ${propiedad.costo}</p>
         <div class="card__inportant__info__container">
             <div class="card__inportant__info" id="info1"> </div>
             <div class="card__inportant__info" id="info2"> </div>
@@ -88,27 +88,24 @@ for (const propiedad of propiedadesVenta) {
   </div>
   `;
   cardsContainer.innerHTML += template;
-
+  let info1 = document.getElementById("info1");
+  let info2 = document.getElementById("info2");
   if (propiedad.smoke) {
-    let info1 = document.getElementById("info1");
-    let smoking = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt=""class="card__icon card__icon--smooking">
+    let template = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt=""class="card__icon card__icon--smooking">
                    <span class="card__inportant__info__text card__inportant__info__text--smooking">Se permite fumar</span>`;
-    info1.innerHTML += smoking;
+    info1.innerHTML += template;
   } else {
-    let info1 = document.getElementById("info1");
-    let smoking = `<img src="./assets/images/cigarette.svg" alt=""class="card__icon card__icon--no-smooking">
+    let template = `<img src="./assets/images/cigarette.svg" alt="" class="card__icon card__icon--no-smooking">
                    <span class="card__inportant__info__text card__inportant__info__text--no-smooking">No se permite fumar</span>`;
-    info1.innerHTML += smoking;
+    info1.innerHTML += template;
   }
   if (propiedad.pets) {
-    let info2 = document.getElementById("info2");
-    let pet = `<img src="./assets/images/pets.svg" alt="" class="card__icon">
+    let template = `<img src="./assets/images/pets.svg" alt="" class="card__icon">
                <span class="card__inportant__info__text card__inportant__info__text--pets">Se permiten mascotas</span>`;
-    info2.innerHTML += pet;
+    info2.innerHTML += template;
   } else {
-    let info2 = document.getElementById("info2");
-    let pet = `<img src="./assets/images/block.svg" alt="" class="card__icon">
+    let template = `<img src="./assets/images/block.svg" alt="" class="card__icon">
                <span class="card__inportant__info__text card__inportant__info__text--no-pets">No se permiten mascotas</span>`;
-    info2.innerHTML += pet;
+    info2.innerHTML += template;
   }
 }
