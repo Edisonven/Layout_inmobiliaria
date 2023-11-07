@@ -95,14 +95,12 @@ body {
 }
 .section__forrent {
   grid-area: section2;
+  margin-top: 500px;
 }
 .section__title {
   text-align: center;
   font-weight: 700;
   font-size: 1.8rem;
-}
-.section__title--for-rent {
-  margin-top: 40px;
 }
 .card__body__container {
   width: 90%;
@@ -241,7 +239,8 @@ body {
     width: 80%;
     margin: 0 auto;
   }
-  .section__forsale {
+  .section__forsale,
+  .section__forrent {
     margin-top: 500px;
   }
   .cards__container {

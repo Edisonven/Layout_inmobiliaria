@@ -25,7 +25,7 @@ const propiedadesVenta = [
   {
     nombre: "Casas en avenida",
     src: "https://images.unsplash.com/photo-1610569244414-5e7453a447a8?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    descripcion: "Hermosas casas con ubicadas centricamente",
+    descripcion: "Hermosas casas ubicadas centricamente",
     ubicacion: "4654 Palmer Road",
     habitaciones: 3,
     baños: 2,
@@ -90,19 +90,6 @@ const propiedadesVenta = [
   },
 ];
 
-const propiedadesAlquiler = [
-  {
-    nombre: "",
-    src: "",
-    descripcion: "",
-    ubicacion: "",
-    habitaciones: 0,
-    costo: 0,
-    smoke: false,
-    pets: true,
-  },
-];
-
 let cardsContainer = document.getElementById("section1");
 
 for (const propiedad of propiedadesVenta) {
@@ -141,7 +128,7 @@ for (const propiedad of propiedadesVenta) {
         </div>
         <p class="card__price">Precio: $${propiedad.costo}</p>
         <div class="card__inportant__info__container">
-            <div class="card__inportant__info" id="info1">${smoke} </div>
+            <div class="card__inportant__info" id="info1">${smoke}</div>
             <div class="card__inportant__info" id="info2">${pets}</div>
         </div>
     </div>
