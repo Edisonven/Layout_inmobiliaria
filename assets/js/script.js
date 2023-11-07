@@ -61,8 +61,27 @@ const propiedadesAlquiler = [
     pets: true,
   },
 ];
+
 let cardsContainer = document.getElementById("section1");
+
 for (const propiedad of propiedadesVenta) {
+  smoke = "";
+  pets = "";
+  if (propiedad.smoke) {
+    smoke = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt="" class="card__icon card__icon--smooking">
+             <span class="card__inportant__info__text card__inportant__info__text--smooking">Se permite fumar</span>`;
+  } else {
+    smoke = `<img src="./assets/images/cigarette.svg" alt="" class="card__icon card__icon--no-smooking">
+             <span class="card__inportant__info__text card__inportant__info__text--no-smooking">No se permite fumar</span>`;
+  }
+  if (propiedad.pets) {
+    pets = `<img src="./assets/images/pets.svg" alt="" class="card__icon">
+            <span class="card__inportant__info__text card__inportant__info__text--pets">Se permiten mascotas</span>`;
+  } else {
+    pets = `<img src="./assets/images/block.svg" alt="" class="card__icon">
+            <span class="card__inportant__info__text card__inportant__info__text--no-pets">No se permiten mascotas</span>`;
+  }
+
   let template = `
   <div class="card__body__container">
     <img src="${propiedad.src}" alt="" class="card__img">
@@ -81,31 +100,11 @@ for (const propiedad of propiedadesVenta) {
         </div>
         <p class="card__price">Precio: $${propiedad.costo}</p>
         <div class="card__inportant__info__container">
-            <div class="card__inportant__info" id="info1"> </div>
-            <div class="card__inportant__info" id="info2"> </div>
+            <div class="card__inportant__info" id="info1">${smoke} </div>
+            <div class="card__inportant__info" id="info2">${pets}</div>
         </div>
     </div>
   </div>
   `;
   cardsContainer.innerHTML += template;
-  let info1 = document.getElementById("info1");
-  let info2 = document.getElementById("info2");
-  if (propiedad.smoke) {
-    let template = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt=""class="card__icon card__icon--smooking">
-                   <span class="card__inportant__info__text card__inportant__info__text--smooking">Se permite fumar</span>`;
-    info1.innerHTML += template;
-  } else {
-    let template = `<img src="./assets/images/cigarette.svg" alt="" class="card__icon card__icon--no-smooking">
-                   <span class="card__inportant__info__text card__inportant__info__text--no-smooking">No se permite fumar</span>`;
-    info1.innerHTML += template;
-  }
-  if (propiedad.pets) {
-    let template = `<img src="./assets/images/pets.svg" alt="" class="card__icon">
-               <span class="card__inportant__info__text card__inportant__info__text--pets">Se permiten mascotas</span>`;
-    info2.innerHTML += template;
-  } else {
-    let template = `<img src="./assets/images/block.svg" alt="" class="card__icon">
-               <span class="card__inportant__info__text card__inportant__info__text--no-pets">No se permiten mascotas</span>`;
-    info2.innerHTML += template;
-  }
 }
