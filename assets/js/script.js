@@ -20,7 +20,7 @@ const propiedadesVenta = [
     habitaciones: 2 + " habitaciones",
     baños: 2 + " Baños",
     costo: "Precio $" + 6000,
-    smoke: false,
+    smoke: true,
     pets: false,
   },
   {
@@ -41,12 +41,12 @@ const propiedadesVenta = [
     descripcion:
       "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
     ubicacion: "Britsh Columbia, CA, 250",
-    habitaciones: 3 + " habitaciones",
-    baños: 2 + " Baños",
-    costo: "Precio $" + 4000,
-    smoke: false,
-    pets: false,
-  }
+    habitaciones: 4 + " habitaciones",
+    baños: 4 + " Baños",
+    costo: "Precio $" + 3000,
+    smoke: true,
+    pets: true,
+  },
 ];
 
 const propiedadesAlquiler = [
@@ -88,22 +88,27 @@ for (const propiedad of propiedadesVenta) {
   </div>
   `;
   cardsContainer.innerHTML += template;
-  if (propiedad.smoke === true) {
-    let smoke = document.getElementById("info1");
-    smoke.innerHTML = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt=""class="card__icon card__icon--smooking">
-                       <span class="card__inportant__info__text card__inportant__info__text--smooking">Se permite fumar</span>`;
+
+  if (propiedad.smoke) {
+    let info1 = document.getElementById("info1");
+    let smoking = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt=""class="card__icon card__icon--smooking">
+                   <span class="card__inportant__info__text card__inportant__info__text--smooking">Se permite fumar</span>`;
+    info1.innerHTML += smoking;
   } else {
-    let smoke = document.getElementById("info1");
-    smoke.innerHTML = `<img src="./assets/images/cigarette.svg" alt=""class="card__icon card__icon--no-smooking">
-                       <span class="card__inportant__info__text card__inportant__info__text--no-smooking">No se permite fumar</span>`;
+    let info1 = document.getElementById("info1");
+    let smoking = `<img src="./assets/images/cigarette.svg" alt=""class="card__icon card__icon--no-smooking">
+                   <span class="card__inportant__info__text card__inportant__info__text--no-smooking">No se permite fumar</span>`;
+    info1.innerHTML += smoking;
   }
-  if (propiedad.pets === true) {
-    let smoke = document.getElementById("info2");
-    smoke.innerHTML = ` <img src="./assets/images/pets.svg" alt="" class="card__icon">
-                        <span class="card__inportant__info__text card__inportant__info__text--pets">Se permiten mascotas</span>`;
+  if (propiedad.pets) {
+    let info2 = document.getElementById("info2");
+    let pet = `<img src="./assets/images/pets.svg" alt="" class="card__icon">
+               <span class="card__inportant__info__text card__inportant__info__text--pets">Se permiten mascotas</span>`;
+    info2.innerHTML += pet;
   } else {
-    let smoke = document.getElementById("info2");
-    smoke.innerHTML = `<img src="./assets/images/block.svg" alt="" class="card__icon">
-                       <span class="card__inportant__info__text card__inportant__info__text--no-pets">No se permiten mascotas</span>`;
+    let info2 = document.getElementById("info2");
+    let pet = `<img src="./assets/images/block.svg" alt="" class="card__icon">
+               <span class="card__inportant__info__text card__inportant__info__text--no-pets">No se permiten mascotas</span>`;
+    info2.innerHTML += pet;
   }
 }
