@@ -79,7 +79,7 @@ for (const propiedad of propiedadesVenta) {
             <img src="./assets/images/bath.svg" alt="" class="card__icon card__icon--bath">
             <span class="card__info__text">${propiedad.baños} Baños</span>
         </div>
-        <p class="card__price">Precio: ${propiedad.costo}</p>
+        <p class="card__price">Precio: $${propiedad.costo}</p>
         <div class="card__inportant__info__container">
             <div class="card__inportant__info" id="info1"> </div>
             <div class="card__inportant__info" id="info2"> </div>
