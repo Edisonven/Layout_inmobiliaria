@@ -89,11 +89,11 @@ const propiedadesVenta = [
     pets: false,
   },
 ];
-
 let cardsContainer = document.getElementById("section1");
+let template=""
+let smoke = "";
+let pets = "";
 for (const propiedad of propiedadesVenta) {
-  let smoke = "";
-  let pets = "";
   if (propiedad.smoke) {
     smoke = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt="" class="card__icon card__icon--smooking">
              <span class="card__inportant__info__text card__inportant__info__text--smooking">Se permite fumar</span>`;
@@ -101,15 +101,14 @@ for (const propiedad of propiedadesVenta) {
     smoke = `<img src="./assets/images/cigarette.svg" alt="" class="card__icon card__icon--no-smooking">
              <span class="card__inportant__info__text card__inportant__info__text--no-smooking">No se permite fumar</span>`;
   }
-  if (propiedad.pets) {
+  if (propiedad["pets"]) {
     pets = `<img src="./assets/images/pets.svg" alt="" class="card__icon">
             <span class="card__inportant__info__text card__inportant__info__text--pets">Se permiten mascotas</span>`;
   } else {
     pets = `<img src="./assets/images/block.svg" alt="" class="card__icon">
             <span class="card__inportant__info__text card__inportant__info__text--no-pets">No se permiten mascotas</span>`;
   }
-
-  let template = `
+   template += `
   <div class="card__body__container">
     <img src="${propiedad.src}" alt="" class="card__img">
     <div class="card__body">
@@ -133,5 +132,5 @@ for (const propiedad of propiedadesVenta) {
     </div>
   </div>
   `;
-  cardsContainer.innerHTML += template;
 }
+cardsContainer.innerHTML = template;

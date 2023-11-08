@@ -187,6 +187,9 @@ body {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+.separador{
+  margin-bottom: 30px;
+}
 /*APARTADO FOOTER*/
 .footer {
   grid-area: footer;
