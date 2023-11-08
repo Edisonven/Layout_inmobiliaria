@@ -1,7 +1,7 @@
 const propiedadesAlquier = [
   {
     nombre: "Casa pequeña en bosque",
-    src: "https://plus.unsplash.com/premium_photo-1686090450488-48ce19426bbe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_15.jpg",
     descripcion: "Casa ubicada en un bosque al sur de la ciudad",
     ubicacion: "2869 Williams Mine Road",
     habitaciones: 1,
@@ -12,7 +12,7 @@ const propiedadesAlquier = [
   },
   {
     nombre: "Casa a orillas del mar",
-    src: "https://images.unsplash.com/photo-1522759531475-b05ba50ae2b7?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_16.jpg",
     descripcion: "Esta propiedad es perfecta para vacaciones en familia",
     ubicacion: "3896 Mulberry Lane",
     habitaciones: 4,
@@ -23,7 +23,7 @@ const propiedadesAlquier = [
   },
   {
     nombre: "Departamentos en el centro de la ciudad",
-    src: "https://plus.unsplash.com/premium_photo-1677620678338-81c1a71baff7?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_17.jpg",
     descripcion: "Amplios departamentos full equipados",
     ubicacion: "1394 Weekley Street",
     habitaciones: 2,
@@ -34,7 +34,7 @@ const propiedadesAlquier = [
   },
   {
     nombre: "Casa de 2 pisos",
-    src: "https://plus.unsplash.com/premium_photo-1680300960892-bd11b59b469b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_18.jpg",
     descripcion: "Casa ubicada cerca de centros comerciales",
     ubicacion: "2177 Spring Haven Trail",
     habitaciones: 4,
@@ -45,7 +45,7 @@ const propiedadesAlquier = [
   },
   {
     nombre: "Casa en barrio residencial",
-    src: "https://plus.unsplash.com/premium_photo-1689609950112-d66095626efb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_19.jpg",
     descripcion: "Casa ubicada en tranquilo barrio a orillas de la ciudad",
     ubicacion: "418 Court Street",
     habitaciones: 4,
@@ -56,7 +56,7 @@ const propiedadesAlquier = [
   },
   {
     nombre: "Casa para vacaciones en pareja",
-    src: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_20.jpg",
     descripcion: "Casa full euipada para parejas jovenes",
     ubicacion: "225 Raver Croft Drive",
     habitaciones: 2,
@@ -67,7 +67,7 @@ const propiedadesAlquier = [
   },
   {
     nombre: "Tranquila casa para toda una temporada",
-    src: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_21.jpg",
     descripcion: "Esta casa está disponible por todo el verano",
     ubicacion: "1910 Terry Lane",
     habitaciones: 4,
@@ -78,7 +78,7 @@ const propiedadesAlquier = [
   },
   {
     nombre: "Amplia casa con piscina y bar",
-    src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_22.jpg",
     descripcion: "Casa equipada para grandes familias",
     ubicacion: "996 Hall Valley Drive",
     habitaciones: 4,

@@ -1,7 +1,7 @@
 const propiedadesVenta = [
   {
     nombre: "Apartamento con piscina",
-    src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_7.jpg",
     descripcion:
       "Este hermoso apartamento ofrece piscina, bar entre otros detalles",
     ubicacion: "Britsh Columbia, CA, 250",
@@ -13,7 +13,7 @@ const propiedadesVenta = [
   },
   {
     nombre: "Apartamento de 2 pisos",
-    src: "https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?auto=format&fit=crop&q=80&w=2028&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_8.jpg",
     descripcion: "Esta propiedad está bubicada en un sitio muy tranquilo",
     ubicacion: "Fuente del Gallo 90",
     habitaciones: 2,
@@ -24,7 +24,7 @@ const propiedadesVenta = [
   },
   {
     nombre: "Casas en avenida",
-    src: "https://images.unsplash.com/photo-1610569244414-5e7453a447a8?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_9.jpg",
     descripcion: "Hermosas casas ubicadas centricamente",
     ubicacion: "4654 Palmer Road",
     habitaciones: 3,
@@ -35,7 +35,7 @@ const propiedadesVenta = [
   },
   {
     nombre: "Apartamento de 2 pisos",
-    src: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=1984&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_10.jpg",
     descripcion: "Apartamento ubicado en barrio residencial",
     ubicacion: "2564 Levy Court",
     habitaciones: 4,
@@ -46,7 +46,7 @@ const propiedadesVenta = [
   },
   {
     nombre: "Condominio NuevaVida",
-    src: "https://images.unsplash.com/photo-1602941525421-8f8b81d3edbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_11.jpg",
     descripcion: "Apartamento y casas ubicadas en condominio",
     ubicacion: "Britsh Columbia, CA, 250",
     habitaciones: 3,
@@ -57,7 +57,7 @@ const propiedadesVenta = [
   },
   {
     nombre: "Condominio NuevaEra",
-    src: "https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=2077&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_12.jpg",
     descripcion: "Casas ubicadas en condominio (estacionamientos incluídos)",
     ubicacion: "2505 Duncan Avenue",
     habitaciones: 3,
@@ -68,7 +68,7 @@ const propiedadesVenta = [
   },
   {
     nombre: "Casa con amplio estacionamiento",
-    src: "https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_13.jpg",
     descripcion: "Esta casa tiene espacio para aparcar hasta 4 vehículos",
     ubicacion: "546 Reynolds Alley",
     habitaciones: 4,
@@ -79,7 +79,7 @@ const propiedadesVenta = [
   },
   {
     nombre: "Casas acogedoras en el centro de la ciudad",
-    src: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./assets/images/imagen_14.jpg",
     descripcion: "Casas con hasta 2 pisos para familias pequeñas",
     ubicacion: "Britsh Columbia, CA, 250",
     habitaciones: 2,
@@ -91,7 +91,6 @@ const propiedadesVenta = [
 ];
 
 let cardsContainer = document.getElementById("section1");
-
 for (const propiedad of propiedadesVenta) {
   let smoke = "";
   let pets = "";
