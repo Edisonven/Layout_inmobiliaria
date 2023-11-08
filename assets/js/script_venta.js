@@ -93,7 +93,7 @@ let cardsContainer = document.getElementById("section1");
 let template = "";
 let smoke = "";
 let pets = "";
-for (const propiedad of propiedadesVenta) {
+for (let propiedad of propiedadesVenta) {
   if (propiedad.smoke) {
     smoke = `<img src="./assets/images/smoking_rooms_FILL1_wght400_GRAD0_opsz24.svg" alt="" class="card__icon card__icon--smooking">
              <span class="card__inportant__info__text card__inportant__info__text--smooking">Se permite fumar</span>`;
