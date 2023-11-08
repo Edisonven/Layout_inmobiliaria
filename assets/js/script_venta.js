@@ -90,7 +90,7 @@ const propiedadesVenta = [
   },
 ];
 let cardsContainer = document.getElementById("section1");
-let template=""
+let template = "";
 let smoke = "";
 let pets = "";
 for (const propiedad of propiedadesVenta) {
@@ -108,7 +108,7 @@ for (const propiedad of propiedadesVenta) {
     pets = `<img src="./assets/images/block.svg" alt="" class="card__icon">
             <span class="card__inportant__info__text card__inportant__info__text--no-pets">No se permiten mascotas</span>`;
   }
-   template += `
+  template += `
   <div class="card__body__container">
     <img src="${propiedad.src}" alt="" class="card__img">
     <div class="card__body">
