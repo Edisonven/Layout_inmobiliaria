@@ -40,7 +40,6 @@ body {
   height: 450px;
 }
 .nabvar__img__title{
-  height: 50%;
   width: 100%;
   position: absolute;
   z-index: 10;
@@ -232,7 +231,6 @@ body {
     object-fit: cover;
   }
   .nabvar__img__title{
-    height: 50%;
     width: 100%;
     position: absolute;
     z-index: 10;
